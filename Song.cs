@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace HW6_module4
 {
-    internal class Song
+    public class Song
     {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public double Duration { get; set; }
+        public DateTime ReleasedDate { get; set; }
+        public int GenreId { get; set; }
+        public Genre Genre { get; set; }
+        public List<Artist> Artists { get; set; } = new List<Artist>();
     }
 }
